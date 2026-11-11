@@ -119,7 +119,7 @@ LDA and QDA are fitted with scikit-learn, fixed priors $\pi_0 = \pi_1 = 1/2$, be
 * **QDA** keeps $\hat\sigma_0^2$ unchanged and only inflates $\hat\sigma_1^2$ (more than threefold). Class 0 stays sharp, so QDA remains confident near the class 0 data, and its log loss rises much less than LDA's.
 * **The price QDA pays:** with $\hat\sigma_1^2 > \hat\sigma_0^2$ the $x^2$ coefficient of the log odds, $\tfrac{1}{2\hat\sigma_0^2} - \tfrac{1}{2\hat\sigma_1^2}$, is positive. The log odds become an upward parabola, so $\hat p(1 \mid x) \to 1$ in **both** tails. A second decision boundary appears near $x \approx -6$, far from any class 1 data. It is an artifact of Gaussian tails, not of the data.
 
-> **Note on scikit-learn versions.** scikit-learn 1.9 and later estimate variances with the divisor $n$ (maximum likelihood, as in the lecture). Older versions use $n - 1$ for QDA and $n - K$ for LDA. With an older version the Experiment 2 numbers change slightly (log losses 0.0997, 0.2250, 0.1782; QDA boundaries −6.24 and 2.15), but every conclusion above is the same. The test suite only checks version independent properties.
+> Note on scikit-learn versions. scikit-learn 1.9 and later estimate variances with the divisor $n$ (maximum likelihood, as in the lecture). Older versions use $n - 1$ for QDA and $n - K$ for LDA. With an older version the Experiment 2 numbers change slightly (log losses 0.0997, 0.2250, 0.1782; QDA boundaries −6.24 and 2.15), but every conclusion above is the same. The test suite only checks version independent properties.
 
 ---
 
