@@ -185,7 +185,7 @@ All computations are deterministic.
 ## Author
 
 **Goriola-Obafemi Babatunde Sukanmi**
-MSc Applied Mathematics and Informatics (Modern Software Development), Southern Federal University
+MSc Applied Mathematics and Informatics (Modern Software Development), 
 
 * GitHub: [@Nobleteesage](https://github.com/Nobleteesage)
 * ORCID: [0009-0000-2865-5242](https://orcid.org/0009-0000-2865-5242)
@@ -196,7 +196,7 @@ MSc Applied Mathematics and Informatics (Modern Software Development), Southern 
 
 ## Acknowledgements
 
-Problem formulation from Homework 4B of *Machine Learning: Mathematical Basis* by D.B. Rokhlin (Southern Federal University, 2026).
+Problem formulation from Homework 4B of *Machine Learning: Mathematical Basis* by D.B. Rokhlin 
 
 ## License
 
